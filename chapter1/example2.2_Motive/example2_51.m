@@ -25,7 +25,7 @@ end
 % legend(H2,'角速度',1);
 xlabel('时间 t');
 
-yyaxis left;
+yyaxis left;    
 plot(t,v(1,length(t)),'-');ylabel('线速度');
 
 yyaxis right;
