@@ -1,0 +1,11 @@
+Df = 5;%
+f_s = 2*500;
+N = f_s/Df;
+t = 0:1/f_s:(N-1)/f_s;
+freq = 0:Df:(N-1)*Df;
+f_t = 2*sin(2*pi*100*t)+cos(2*pi*180*t);
+F_f = 1/f_s*fft(f_t,N);
+
+plot(freq-f_s/2,abs(fftshift(F_f)));
+xlabel('ÆµÂÊ');
+ylabel('·ù¶ÈÆ×');
